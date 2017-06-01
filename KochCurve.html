@@ -5,7 +5,7 @@
     <title>Koch Curve</title>
 </head>
 <body>
-    <canvas id = "my_canvas" width = "900" height = "900"></canvas>
+    <canvas id = "my_canvas" width = "800" height = "1000"></canvas>
 <script>
     var myCanvas = document.getElementById("my_canvas");
     var canvas = myCanvas.getContext("2d");
@@ -32,7 +32,7 @@
         canvas.moveTo(0,0);
         for(var i = 0; i < parts.length; i++){
             if(parts[i] == "0"){
-                canvas.translate(0,0.1);
+                canvas.translate(0,0.5);
                 canvas.lineTo(0,0.1);
             } else{
                 canvas.rotate(Math.PI/3);
